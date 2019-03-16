@@ -1,0 +1,96 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <meta name="description" content="A web design agency that focuses on web design, branding and web security for its client. Explore how we can help you succeed ">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <link rel="canonical" href="http://www.crystalweb.com">
+ 
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>{% block title %}Home{% endblock title %}</title>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">CRY<span style="color: #FF5733">stalweb</span></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact_us' %}">Contact-us</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+
+
+
+    {% block content %}
+
+
+    {% endblock %}
+<div class="footer">
+    <div class="container">
+       <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <p></p>
+                <p>We are dedicated to give you the <br> best you can get elsewhere.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <p></p>
+            <dl>
+                <dt>Address</dt>
+                <dd>Afienya, New jerusalem</dd>
+                <dt>Phone</dt>
+                <dd>0269759117</dd>
+            </dl>
+            <li><i class="far fa envelope" style="font-size:28px;color:white;" aria-hidden="true"></i><a href="{% url 'contact_us' %}">Contact Form</a></li>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <p></p>
+            <h4>links</h4>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="">Portfolio</a></li>
+               
+
+            </div>
+
+        </div>
+        <li>&#169;Copyright 2019</li>
+          
+        
+    </div>
+</div>
+<script src="{% static "new/wow.min.js" %}"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>

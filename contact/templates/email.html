@@ -1,0 +1,13 @@
+{% extends 'base1.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h3 class="chat" style="font-family: Roboto">Let's chat.</h3>
+<h2 class="head"style="text-align: center;font-family: Roboto;">Contact Us</h2>
+<form method="post" class="col-sm-12 col-xs-4">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Submit" />
+    <p></p>
+</form>
+{% endblock %}

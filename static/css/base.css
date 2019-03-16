@@ -1,0 +1,324 @@
+.navbar-brand{
+	font-size: 35px !important;
+	font-family: Roboto;
+}
+
+
+
+.nav-item{
+	font-size: 20px;
+	font-family: Lato;
+	color: black !important;
+
+
+
+}
+.nav-link:hover{
+	color: #CD5C5C !important;
+
+}
+
+.heat{
+     background: url("/static/images/b2.png") 50% 0 no-repeat  fixed;
+     color: black;
+     height: auto;
+
+     padding: 100px 0 0 0; 
+     background-position: center;
+     background-size: cover;
+     width: 100%;  
+     text-align: center;
+     position: relative;
+     }
+     .heat p{
+     	font-size: 20px;
+
+     }
+    
+.heat h1 {
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+	font-family: Roboto Condensed;
+
+}
+.heat i {
+	width: 200px;
+	text-align: center;
+}
+
+
+     .mes h1{
+     	text-align: center;
+     	font-family: Roboto;
+
+     	
+     }
+.mes p{
+text-align: center;
+font-size: 20px;
+font-family: Lato;
+     	
+ }
+ .bus h1{
+ 	padding-top: 40px;
+ }
+ .heat p{
+ 	font-family: Lato;
+ }
+
+     .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.footer p{
+	font-size: 18px;
+	font-family: lato;
+}
+
+.footer{
+	text-decoration: none;
+	background-color: #4b0026;
+	
+	color: white;
+	list-style: none;
+	margin-top: 150px;
+	
+}
+.footer .row {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+
+.row a{
+	color: white;
+}
+.footer .fas {
+	margin-right: 3px;
+	padding-right: 10px;
+	
+}
+
+
+}
+.technology p {
+	font-family: Lato;
+	font-size: 20px;
+
+}
+.asteriskField {
+display: none;
+}
+
+.banner img{
+	height: auto;
+	width: 100%;
+}
+.intro h1{
+	font-family: Roboto;
+	font-size: 40px;
+}
+.intro p{
+	font-size: 22px;
+	font-family: Lato;
+
+
+
+}
+.sen b{
+	font-size: 30px;
+}
+.sen p{
+	margin: 0px 70px 0px 70px;
+	font-size: 18px;
+	font-family: Lato;
+
+}
+.technology{
+	margin-top: 40px;
+
+}
+.sec{
+	background: url("/static/images/s.png") 50% 0 no-repeat  fixed;
+     color: white;
+     opacity: 1;
+     background-size: cover;
+     height: 400px;
+     background-position: center;
+     margin-top: 100px;
+     text-align: center;
+}
+.sec h1, p {
+	font-size: 40px;
+	font-family: Lato;
+	text-align: center
+	
+
+
+}
+.sec h1{
+	margin-top: 50px;
+	padding-top: 80px;
+	padding-top: 70px;
+	font-color: orange;
+
+}
+.sec p{
+	margin-bottom: 80px;
+	padding-bottom: 30px;
+}
+.technology .row p{
+	font-family: Lato;
+	border-left: 6px solid red;
+  background-color: lightgrey;
+  font-size: 25px;
+}
+form {
+	margin: 0px 150px 0px 150px;
+	
+	
+}
+
+@media only screen and (max-width: 400px) {
+  form {
+    margin-top: 60px;
+    margin-left: 0px;
+    
+  }
+  .heat{
+  	text-align: center;
+  	margin: 0px;
+  	
+  	height: 400px;
+    background: url("/static/images/b2.png") 50% 0 no-repeat  fixed;
+     
+     
+     width: 10%;  
+     
+     position: relative
+
+
+  }
+  .heat h1{
+  	font-size: 22px;
+  	padding-top: 0px;
+  	margin-top: -20px;
+  }
+  
+  .heat .container .row{
+  	
+  	 font-size: 5px;
+  }
+  .heat .fas fa-database{
+  	padding-top: 2px;
+  	font-size: 3px;
+
+  }
+  .sec h1, p{
+  	font-size: 24px;
+  }
+
+
+  .row{
+  	font-size: 12px;
+
+  }
+  .intro h1{
+  	margin-top: 40px;
+  	margin-bottom: 20px
+  }
+  .footer{
+  	margin-top: 70px;
+
+
+
+  }
+.footer .row{
+	margin-bottom: 50px;
+}
+  .footer li{
+  	font-size: 15px;
+  }
+  .mr .row{
+  	padding-top: 50px;
+  	margin-top: 10px;
+  	margin-right: 5px;
+
+  }
+  .hovereffect{
+  	padding-top: 20px;
+  }
+}
