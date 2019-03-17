@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '#mt$5$prziz&*uon^bl(u$1jskb3hx*s4)v3ldfqcpzm_cpz0w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =     False
 
 ALLOWED_HOSTS = ['*']
 
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bvhxnwgu',
+        'USER': 'bvhxnwgu',
+        'PASSWORD': 'eQ7RPFPWALOfCLMiFioSlPKHe9RG45Pf',
+        'HOST': 'isilo.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 
