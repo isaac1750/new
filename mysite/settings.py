@@ -24,7 +24,7 @@ SECRET_KEY = '#mt$5$prziz&*uon^bl(u$1jskb3hx*s4)v3ldfqcpzm_cpz0w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
- 
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -129,7 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
