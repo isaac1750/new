@@ -144,3 +144,5 @@ EMAIL_HOST_USER = 'bbonsu101@gmail.com'
 EMAIL_HOST_PASSWORD = 'utensils'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+c
