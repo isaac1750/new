@@ -1,9 +1,10 @@
-from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.conf.urls import re_path
 from . import views
 
 
 urlpatterns = [
+#now go to browser
+    path('/contact/', views.contact_us, name='contact_us'), 
 
-    path('contact_us/', views.contact_us, name='contact_us'),
-]   
+]

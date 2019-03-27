@@ -26,7 +26,7 @@ SECRET_KEY = '#mt$5$prziz&*uon^bl(u$1jskb3hx*s4)v3ldfqcpzm_cpz0w'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -79,12 +79,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bvhxnwgu',
-        'USER': 'bvhxnwgu',
-        'PASSWORD': 'eQ7RPFPWALOfCLMiFioSlPKHe9RG45Pf',
-        'HOST': 'isilo.db.elephantsql.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -129,10 +125,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 
@@ -145,4 +144,3 @@ EMAIL_HOST_PASSWORD = 'utensils'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-c

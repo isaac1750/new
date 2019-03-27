@@ -5,20 +5,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-   <meta name="description" content="A web design agency that focuses on web design, branding and web security for its client. Explore how we can help you succeed ">
+    <meta name="description" content="A web design agency that focuses on web design, branding and web security for its client. Explore how we can help you succeed ">
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
     <link rel="canonical" href="http://www.crystalweb.com">
  
     <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
      <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>{% block title %}Home{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
   </head>
   <body>
 
@@ -36,10 +34,13 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'about' %}">About</a>
       </li>
+      
+       <li class="nav-item">
+        <a class="nav-link" href="{% url 'post' %}">Blog</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'contact_us' %}">Contact-us</a>
       </li>
-      
     </ul>
     
   </div>
@@ -67,7 +68,7 @@
                 <dt>Phone</dt>
                 <dd>0269759117</dd>
             </dl>
-            <li><i class="far fa envelope" style="font-size:28px;color:white;" aria-hidden="true"></i><a href="{% url 'contact_us' %}">Contact Form</a></li>
+            <li><i class="far fa-envelope" style="font-size:28px;color:white;" aria-hidden="true"></i><a href="{% url 'contact_us' %}">Contact Form</a></li>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <p></p>

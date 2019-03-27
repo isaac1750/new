@@ -1,13 +1,10 @@
-from django.shortcuts import render
 from django.core.mail import send_mail
 from django.shortcuts import render
 from django.views.generic import View
 from django.http import HttpResponse # Add this
 
+
 from .forms import ContactForm # Add this
-
-
-
 
 
 def contact_us(request):
@@ -25,9 +22,9 @@ def contact_us(request):
         form = ContactForm()
 
     return render(request, 'email.html', {'form': form})
+#check facebook what is the way forward?
+# I will go now.Keep coding.I think U got your answers
+#no 
+# u are accessing the emil.html page from contact/us now instead of contact-us/contact-us
+#isnt the a way we can get contact-us?
 
-# Create your views here.
-
-
-
-# Create your views here.

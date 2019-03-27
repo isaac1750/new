@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Blog{% endblock title %}
+
+{% block content %}
+<p></p>
+<div class="blog text-center">
+	<h3>{{ post.title }}</h3>
+	<p class="bl">{{ post.published_date }}</p>
+	<p class="btl">{{ post.author }}</p>
+	<p class="txt">{{ post.text }}</p>
+</div>
+{% endblock %}

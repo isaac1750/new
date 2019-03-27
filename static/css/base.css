@@ -59,6 +59,14 @@ font-size: 20px;
 font-family: Lato;
      	
  }
+ .th, .po{
+  font-size: 15px;
+  font-family: Roboto
+ }
+  .bl, .txt{
+  font-size: 20px;
+  font-family: Roboto
+ }
  .bus h1{
  	padding-top: 40px;
  }
@@ -262,14 +270,19 @@ form {
   	text-align: center;
   	margin: 0px;
   	
-  	height: 400px;
+  	height: 800px;
     background: url("/static/images/b2.png") 50% 0 no-repeat  fixed;
      
      
-     width: 10%;  
+     width: 100%;  
      
      position: relative
 
+
+  }
+  .heat .fas{
+    font-size: 12px;
+    padding-top: 10px;
 
   }
   .heat h1{
@@ -282,11 +295,7 @@ form {
   	
   	 font-size: 5px;
   }
-  .heat .fas fa-database{
-  	padding-top: 2px;
-  	font-size: 3px;
-
-  }
+  
   .sec h1, p{
   	font-size: 24px;
   }
