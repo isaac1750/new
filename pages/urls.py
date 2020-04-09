@@ -8,7 +8,7 @@ from . import views
 
 
 urlpatterns = [
-    path('home/', views.HomePageView.as_view(), name = 'home'),
+    path('', views.HomePageView.as_view(), name = 'home'),
     path('about/', views.AboutPageView.as_view(), name = 'about'),
     path('post/', views.post, name = 'post'),
     re_path(r'^(?P<slug>[\w-]+)/$', views.post_detail, name='post_detail'),
